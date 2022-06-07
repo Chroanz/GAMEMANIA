@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    text-transform: uppercase;
     box-sizing: border-box;
 }
 
@@ -12,6 +11,8 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    text-transform: uppercase;
+
 }
 
 .logo {
@@ -19,9 +20,11 @@
     height: 3em;
 }
 
-header, footer {
+header{
     background-color: #0060B1;
     height: 4rem;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.582), 0px 0px 30px rgba(85, 85, 85, 0.644);
+    text-transform: uppercase;
 }
 
 .menu a {
@@ -35,11 +38,18 @@ header, footer {
     display: flex;
     justify-content: space-between;
 }
+
+.menu a:hover {
+    color: #7D1313;
+}
+
 .banner {
+    text-transform: uppercase;
     background-image: url(../img/banner.svg);
     background-repeat: no-repeat;
     background-color: black;
     height: 500px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.582), 0px 0px 30px rgba(85, 85, 85, 0.644);
 }
 
 .texto-banner {
@@ -72,15 +82,18 @@ header, footer {
     background-color: #7D1313;
     padding: 12px;
     border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.582), 0px 0px 30px rgba(85, 85, 85, 0.644);
 }
 
 .secao-jogos {
+    text-transform: uppercase;
     background-color: black;
     height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.582), 0px 0px 30px rgba(85, 85, 85, 0.644);
 }
 
 .secao-jogos img {
@@ -89,12 +102,14 @@ header, footer {
 }
 
 .secao-sobre {
+    text-transform: uppercase;
     width: 100%;
     height: 500px;
     background-color: black;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.582), 0px 0px 30px rgba(85, 85, 85, 0.644);
 }
 
 .texto-sobre {
@@ -113,6 +128,133 @@ header, footer {
 
 .posicionamento-header {
     position: relative;
+}
+
+.secao-noticias {
+    text-transform: uppercase;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.993);
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.582), 0px 0px 30px rgba(85, 85, 85, 0.644);
+}
+
+.secao-noticias .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bloco-noticias {
+    width: 80%;
+    height: 90%;
+    color: white;
+}
+
+.bloco-noticias h2 {
+    font-size: 25px;
+}
+
+.content-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.card-product {
+    text-align: center;
+    width: 240px;
+    height: 360px;
+    color: white;
+    margin-bottom: 32px;
+    background: var(--gradient);
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.582), 0px 0px 30px rgba(85, 85, 85, 0.644);
+}
+
+.card-product img {
+    width: 180px;
+    height: 180px;
+}
+
+.card-product h3 {
+    padding: 20px 5px;
+    font-size: 24px;
+}
+
+.card-product p {
+    padding: 0px 20px;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #0060B1;
+
+}
+
+.rodape {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    color: white;
+    text-transform: uppercase;
+}
+
+.links h2 {
+    font-size: 24px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.logo-rodape {
+    width: 300px;
+}
+
+.sociais h2 {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.sociais input[type="email"]::placeholder{
+    color: #b8b3b3;
+    font-weight: bold;
+}
+
+.botao-cadastrar {
+    width: 156px;
+    color: white;
+    background-color: #7D1313;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.siga-nos {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.8em;
+    color: white;
+}
+
+.siga-nos img {
+    height: 50px;
+    width: 60px;
 }
 
 @keyframes shine {
@@ -155,7 +297,7 @@ header, footer {
         display: none;
         flex-direction: column;
         width: 200px;
-        height: 250px;
+        height: 270px;
         position: absolute;
         top: 0;
         right: 60;
