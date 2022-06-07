@@ -1,0 +1,14 @@
+Cores:
+
+conteudo e texto: branco
+destaques: fundo em preto e azul
+pode conter: vermelho ou verde
+nao pode ter: rosa, amarelo, laranja, roxo, ciano, bege ou marrom
+
+Tipografia:
+
+Sans serif ou serif, basica sem desenho de fonte
+
+página de contato, com dados como: telefone, e-mail, localização.
+Fácil visualização o e-mail e telefone para contato da empresa.
+Redes sociais (Facebook e Instagram) interligadas ao site. 
