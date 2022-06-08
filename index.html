@@ -14,13 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>GameMania - Sua loja de jogos</title>
 </head>
-<body onload="mostrarPopup()">
+<body onload="renderizaProdutos()">
     <header>
         <div class="container-grid posicionamento-header">
             <div>
                 <a href="index.html"><img class="logo" src="/img/logo.svg" alt="logo da gamemania"></a>
             </div>
-            <a href="#" onclick="mostrarMenu()"><img class="barras" src="/img/bars.svg" alt="menu de barras"></a>
+            <a href="#" id="barras"><img class="barras" src="/img/bars.svg" alt="menu de barras"></a>
             <nav id="menu" class="menu">
                 <a href="#">inicio</a>
                 <a href="#">produtos</a>
@@ -39,7 +39,7 @@
             </div>
         </div>
     </div>
-    <section class="secao-jogos">
+    <section class="secao-consoles">
             <a href="#"><img src="/img/iconps.png" alt="icone playstation"></a>
             <a href="#"><img src="/img/iconxbox.png" alt="icone xbox"></a>
             <a href="#"><img src="/img/switchicon.png" alt="icone switch"></a>
@@ -58,60 +58,20 @@
             </div>
         </div>
     </section>
-    <section class="secao-noticias">
+    <section class="secao-products">
         <div class="container">
-            <div class="bloco-noticias">
+            <div class="bloco-products">
                 <h2>produtos em oferta</h2>
-                <div class="content-news">
-                    <div class="card-product">
-                        <img src="/img/joystickxbox.png" alt="foto joystick">
-                        <h3>titulo do produto</h3>
-                        <p>ushuahsuahsuahssh</p>
-                    </div>
-                    <div class="card-product">
-                        <img src="/img/joystickxbox.png" alt="foto joystick">
-                        <h3>titulo do produto</h3>
-                        <p>ushuahsuahsuahssh</p>
-                    </div>
-                    <div class="card-product">
-                        <img src="/img/joystickxbox.png" alt="foto joystick">
-                        <h3>titulo do produto</h3>
-                        <p>ushuahsuahsuahssh</p>
-                    </div>
-                    <div class="card-product">
-                        <img src="/img/joystickxbox.png" alt="foto joystick">
-                        <h3>titulo do produto</h3>
-                        <p>ushuahsuahsuahssh</p>
-                    </div>
-                    <div class="card-product">
-                        <img src="/img/joystickxbox.png" alt="foto joystick">
-                        <h3>titulo do produto</h3>
-                        <p>ushuahsuahsuahssh</p>
-                    </div>
-                    <div class="card-product">
-                        <img src="/img/joystickxbox.png" alt="foto joystick">
-                        <h3>titulo do produto</h3>
-                        <p>ushuahsuahsuahssh</p>
-                    </div>
-                    <div class="card-product">
-                        <img src="/img/joystickxbox.png" alt="foto joystick">
-                        <h3>titulo do produto</h3>
-                        <p>ushuahsuahsuahssh</p>
-                    </div>
-                    <div class="card-product">
-                        <img src="/img/joystickxbox.png" alt="foto joystick">
-                        <h3>titulo do produto</h3>
-                        <p>ushuahsuahsuahssh</p>
-                    </div>
-                    <div class="card-product">
-                        <img src="/img/joystickxbox.png" alt="foto joystick">
-                        <h3>titulo do produto</h3>
-                        <p>ushuahsuahsuahssh</p>
-                    </div>
+                <div id="espaco-produtos" class="content-product">
                 </div>
             </div>
         </div>
     </section>
+    <div id="carrossel" class="carrossel">
+        <img src="/img/banner_cs.png" alt="Banner CS">
+        <img src="/img/banner_lol.png" alt="Banner lol">
+        <img src="/img/banner_pilotos.png" alt="Banner Pilotos">
+    </div>
     <footer>
         <div class="container rodape">
             <div class="links-footer">
@@ -131,7 +91,6 @@
                         <li><a href="#">redes sociais</a></li>
                     </ul>
                 </div>
-                <img class="logo-rodape" src="/img/logo.svg" alt="logo rodape">
                 <div class="sociais">
                     <h2>faça parte do nosso clube, receba novidades sobre a loja e o mundo gamer</h2>
                     <form action="">
@@ -148,7 +107,8 @@
             </div>
         </div>
     </footer>
-
+        <!-- Jquery v3.6.0.min-->
+<script src="/js/jquery-v3.6.0.min.js"></script>
         <!-- Bootstrap JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <!-- Efeito menu hamburguer-->
