@@ -90,7 +90,7 @@ function renderizaProdutos(){
     for (let index = 0; index < listaProdutos.length; index++){
         const produto = listaProdutos [index]
         template += `<div class="card-product">
-    <img src="/img/joystickxbox.png" alt="foto joystick">
+    <img src="img/joystickxbox.png" alt="foto joystick">
     <h3>${produto.titulo}</h3>
     <p>${produto.descricao}</p>
 </div>`
